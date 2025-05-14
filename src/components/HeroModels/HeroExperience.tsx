@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber"
 import { useMediaQuery } from "react-responsive"
 import { Room } from "./Room"
 import HeroLights from "./HeroLights"
+import Particles from "./Particles"
 
 const HeroExperience = () => {
 
@@ -12,6 +13,7 @@ const HeroExperience = () => {
   return (
     <Canvas camera={{position : [0,0,15], fov: 45}}>
         <HeroLights/>
+        <Particles count={7}/>
         <OrbitControls
         enablePan={false}
         enableZoom={!isTablet || !isMobile}

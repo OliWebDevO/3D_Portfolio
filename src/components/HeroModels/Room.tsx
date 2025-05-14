@@ -57,7 +57,7 @@ export function Room(props: JSX.IntrinsicElements['group']) {
     <group {...props} dispose={null}>
       <EffectComposer>
         <SelectiveBloom
-          selection={screensRef.current || undefined}
+          selection={screensRef}
           intensity={1.5} // Strength of the bloom
           luminanceThreshold={0.2} // Minimum luminance needed
           luminanceSmoothing={0.9} // Smooth transition
