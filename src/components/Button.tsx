@@ -1,7 +1,19 @@
 
 const Button = ({className, id, text} : ButtonProps) => {
   return (
-    <a id={id} className={`${className ?? ''} cta-wrapper`} href="" >
+    <a className={`${className ?? ''} cta-wrapper`}
+        onClick={(e) => {
+            e.preventDefault();
+            const target = document.querySelector('#counter') as HTMLElement;
+            if (target && id) {
+                const offset = window.innerWidth * 0.15;
+                const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({
+                    top: top,
+                    behavior: 'smooth'
+                });
+            }
+        }}>
         <div className='cta-button group'>
             <div className='bg-circle'/>
                 <p className='text'>{text}</p>
