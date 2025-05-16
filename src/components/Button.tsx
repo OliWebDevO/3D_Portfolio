@@ -4,7 +4,7 @@ const Button = ({className, id, text} : ButtonProps) => {
     <a className={`${className ?? ''} cta-wrapper`}
         onClick={(e) => {
             e.preventDefault();
-            const target = document.querySelector('#counter') as HTMLElement;
+            const target = document.querySelector('#work') as HTMLElement;
             if (target && id) {
                 const offset = window.innerWidth * 0.15;
                 const top = target.getBoundingClientRect().top + window.scrollY - offset;
