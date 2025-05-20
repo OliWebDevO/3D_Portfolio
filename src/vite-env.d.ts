@@ -5,3 +5,7 @@ interface ButtonProps {
   id?: string;
   text?: string;
 }
+
+interface LogoIconType {
+  imgPath: string;
+}
