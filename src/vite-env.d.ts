@@ -17,10 +17,11 @@ interface TitleHeaderProps {
 interface CardType {
   review: string;
   imgPath: string;
-  logoPath: string;
-  title: string;
-  date: string;
-  responsibilities: string[];
+  name?: string;
+  logoPath?: string;
+  title?: string;
+  date?: string;
+  responsibilities?: string[];
 }
 
 interface GlowCardProps {

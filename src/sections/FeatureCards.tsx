@@ -26,7 +26,7 @@ const FeatureCards = () => {
             {abilities.map(({imgPath, title, desc}, index) => (
               <div 
               key={imgPath} 
-              className=" card  rounded-xl p-8 flex flex-col gap-4"
+              className=" bg-black-100 card  rounded-xl p-8 flex flex-col gap-4"
               onMouseMove={handleMouseMove(index)}
               ref={(el) => {
                 if (el) cardRefs.current[index] = el;
