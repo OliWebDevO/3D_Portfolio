@@ -3,11 +3,12 @@ import type { ReactNode } from "react";
 
 interface CardType {
   review: string;
-  imgPath: string;
-  logoPath: string;
-  title: string;
-  date: string;
-  responsibilities: string[];
+  imgPath?: string;
+  name?: string;
+  logoPath?: string;
+  title?: string;
+  date?: string;
+  responsibilities?: string[];
 }
 
 interface GlowCardProps {

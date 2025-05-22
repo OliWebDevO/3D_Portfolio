@@ -16,7 +16,7 @@ interface TitleHeaderProps {
 
 interface CardType {
   review: string;
-  imgPath: string;
+  imgPath?: string;
   name?: string;
   logoPath?: string;
   title?: string;
