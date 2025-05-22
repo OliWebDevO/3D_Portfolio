@@ -28,3 +28,14 @@ interface GlowCardProps {
   children?: ReactNode;
   index: number;
 }
+
+interface ModelType {
+  model: TechIconType;
+}
+
+interface TechIconType {
+  name: string;
+  modelPath: string;
+  scale: number;
+  rotation: number[];
+}

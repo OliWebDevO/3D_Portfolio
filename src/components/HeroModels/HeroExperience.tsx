@@ -7,7 +7,7 @@ import Particles from "./Particles"
 
 const HeroExperience = () => {
 
-    const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
+    // const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   return (
@@ -16,7 +16,8 @@ const HeroExperience = () => {
         <Particles count={7}/>
         <OrbitControls
         enablePan={false}
-        enableZoom={!isTablet || !isMobile}
+        // enableZoom={!isTablet || !isMobile}
+        enableZoom={false}
         maxDistance={20}
         minDistance={5}
         minPolarAngle={Math.PI / 5}
