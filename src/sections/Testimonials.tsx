@@ -1,11 +1,11 @@
 import GlowCard from "../components/GlowCard"
-import TitleHeader from "../components/HeroModels/TitleHeader"
+import TitleHeader from "../components/TitleHeader"
 import { testimonials } from "../constants"
 
 
 const Testimonials = () => {
   return (
-    <section id="testimonial" className="flex-center section-padding">
+    <section id="testimonials" className="flex-center section-padding">
         <div className="w-full h-full md:px-10 px-5">
             <TitleHeader title='Testimonials' sub='💬  What People Say'/>
             <div className="lg:columns-3 md:columns-2 columns-1 mt-16">

@@ -5,9 +5,9 @@
     { "path": "./tsconfig.node.json" }
   ],
      "compilerOptions": {
-    "jsx": "react", // Use "react-jsx" if you're using React 17+ with the new JSX transform
+    "jsx": "react-jsx", // Use "react-jsx" if you're using React 17+ with the new JSX transform
     "lib": ["dom", "esnext"], // Include "dom" for JSX support
-    "types": ["react", "react-dom"], // Ensure React types are included
+    "types": ["vite/client", "react", "react-dom"], // Ensure React types are included
     "moduleResolution": "node", // Ensure TypeScript resolves modules correctly
     "esModuleInterop": true // Enable ES module interop for React imports
   }

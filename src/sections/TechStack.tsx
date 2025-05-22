@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react"
-import TitleHeader from "../components/HeroModels/TitleHeader"
+import TitleHeader from "../components/TitleHeader"
 import TechIcon from "../components/models/techlogos/TechIcon"
 import { techStackIcons } from "../constants"
 // import { techStackImgs } from "../constants"

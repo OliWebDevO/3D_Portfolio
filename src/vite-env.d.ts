@@ -40,3 +40,4 @@ interface TechIconType {
   scale: number;
   rotation: number[];
 }
+
